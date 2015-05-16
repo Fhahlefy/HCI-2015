@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<title>Data</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+ </head>
+ 
+ <div class="container">
+  <h2>Data</h2>
+  <form role="form">
+  <div class="form-group">
+      <label for="nama">Nama lengkap:</label>
+      <input type="text" class="form-control" placeholder="Nama" required>
+	   <div class="help-block with-errors"></div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Email" required>
+	   <div class="help-block with-errors"></div>
+    </div>
+	<div class="form-group">
+      <label for="sel">Bulan lahir:</label>
+	 <select class="form-control" id="sel" required>
+        <option>Januari</option>
+        <option>Februari</option>
+        <option>Maret</option>
+        <option>April</option>
+		<option>Mei</option>
+		<option>Juni</option>
+		<option>Juli</option>
+		<option>Agustus</option>
+		<option>September</option>
+		<option>Oktober</option>
+		<option>November</option>
+		<option>Desember</option>
+      </select>
+	   <div class="help-block with-errors"></div>
+	 </div>
+	 <div class="form-group">
+      <label for="tahun">Tahun lahir:</label>
+      <input type="number" class="form-control" min="1900" max="2100" placeholder="1900 s/d 2100" required>
+	   <div class="help-block with-errors"></div>
+    </div>
+	 <div class="form-group">
+      <label for="comment">Informasi:</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+	<div class="radio">
+      <label><input type="radio" name="optradio">Wajib</label>
+	   <div class="help-block with-errors"></div>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Sukarela</label>
+	   <div class="help-block with-errors"></div>
+    </div>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
